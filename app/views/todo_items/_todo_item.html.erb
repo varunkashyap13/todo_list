@@ -1,0 +1,10 @@
+<table>
+  <tr>
+  <% if todo_item.done%>
+    <td class="green"><%= todo_item.due_date %></td>
+  <% else %>
+    <td class="red"><%= todo_item.due_date %></td>
+  <% end %>
+    <td class="item_description"><%= link_to todo_item.description, todo_list_todo_item_path(@todo_list, todo_item.id) %><% todo_item.description %></td>
+  </tr>
+</table>

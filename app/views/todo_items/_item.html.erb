@@ -1,0 +1,15 @@
+
+
+<div id="box">
+  <p id="flashlight">
+    <span id="flash"><%= @todo_item.task_title %></span>
+  </p>
+</div>
+
+<p>Due on: <span class="titles"><%= @todo_item.due_date %></span</p>
+<% if @todo_item.done%>
+    <p>Status: <span class="titles">Done</span></p>
+<% else%>
+    <p>Status: <span class="titles"> Not done</span></p>
+<% end %>
+<p>Description: <span class="titles"><%= @todo_item.description %></span></p>

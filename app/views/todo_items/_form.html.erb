@@ -1,0 +1,13 @@
+<%= form_for([@todo_list, @todo_item]) do |f| %>
+ <p>Due date:</p>
+ <%= f.text_field :due_date, placeholder: "Due Date" %>
+<p>Task title:</p>
+<%= f.text_field :task_title, placeholder: "Task Title" %>
+<p>Description:</p>
+<%= f.text_area :description, :cols => "20", :rows => "10", placeholder: "Description" %>
+<p>Task completed:</p>
+<%= f.check_box :done, placeholder: "Last Name" %>
+
+ <p><%= f.submit %></p>
+<% end %>
+

@@ -1,0 +1,102 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ body {
+     padding: 15px;
+     margin-left: 20px;
+     background: #02AAB0;  /* fallback for old browsers */
+     background: -webkit-linear-gradient(to right, #00dfba, #00c5cc);  /* Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to right, #00dfba, #00c5cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     color: white;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+
+ h1 {
+     color: white;
+     text-shadow: 2px 2px 1px lightgray;
+ }
+
+ .todo_list {
+     padding-top: 20px;
+ }
+
+ .todo_list_link {
+     font: bold 15px arial, sans-serif;
+ }
+
+ .green{
+    display: inline-block;
+    width: 6rem;
+    border: 3px solid green;
+    text-align: center;
+    background: gray;
+    margin: 10px 10px 0 0;
+ }
+
+ .red{
+    display: inline-block;
+    width: 6rem;
+    border: 3px solid red;
+    text-align: center;
+    background: gray;
+    margin: 10px 10px 0 0;
+ }
+
+ .item_description{
+     padding: 10px 0 0 0;
+     color: gray;
+ }
+
+ h3{
+     color:darkred;
+ }
+
+ .options{
+     margin: 15px 0 10px 0;
+ }
+
+ .date_box{
+    display: inline-block;
+    width: 6rem;
+    border: 3px solid orange;
+    text-align: center;
+    background: gray;
+    margin: 10px 10px 0 0;
+ }
+
+ .titles{
+     color:black;
+ }
+
+#box {
+    margin-top: -20px;
+    text-align:left;
+    font-size: 3em;
+    font-weight: bold;
+    -webkit-backface-visibility: hidden;
+  }
+
+  #flashlight {
+    color: hsla(0,0%,0%,0);
+    perspective: 80px;
+    outline: none;
+  }
+  
+  #flash {
+    display: inline-block;
+    text-shadow: #bbb 0 0 1px, #fff 0 -1px 2px, #fff 0 -3px 2px, rgba(0,0,0,0.8) 0 30px 25px;
+    transition: margin-left 0.3s cubic-bezier(0, 1, 0, 1);
+  }

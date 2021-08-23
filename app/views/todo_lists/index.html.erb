@@ -1,0 +1,32 @@
+
+
+<div id="box">
+  <p id="flashlight">
+    <span id="flash">TODO LIST</span>
+  </p>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @todo_lists.each do |todo_list| %>
+      <tr>
+        <td class="date_box"><%= todo_list.list_due_date %></td>
+        <td class="item_description"><%= link_to todo_list.list_name, todo_list %><% todo_list.list_name %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<p>
+<%= will_paginate @todo_lists%>
+</p> 
+
+<%= link_to 'New Todo List', new_todo_list_path %>

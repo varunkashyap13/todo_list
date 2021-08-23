@@ -1,0 +1,7 @@
+<h1>Account Info</h1>
+<div id="accounts_wrapper">
+ <%= render @user.account %>
+ </div>
+
+<%= link_to 'Edit', edit_user_account_path(current_user.id, current_user.account) %> |
+<%= link_to 'Back', :back %>

@@ -1,0 +1,10 @@
+
+<div id="box">
+  <p id="flashlight">
+    <span id="flash">Editing Todo Item</span>
+  </p>
+</div>
+<%= render 'form', todo_item: @todo_item %>
+
+<%= link_to 'Show', todo_list_todo_item_path(@todo_list) %> |
+<%= link_to 'Back', :back %>

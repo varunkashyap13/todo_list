@@ -1,0 +1,7 @@
+<%= form_for([@user, account]) do |f| %>
+ <p>First Name: <%= f.text_field :first_name, placeholder: "First Name" %></p>
+ <p>Last Name: <%= f.text_field :last_name, placeholder: "Last Name" %></p>
+ <p>Gender: <%= f.text_field :gender, placeholder: "Gender" %></p>
+  <p>Age: <%= f.text_field :age, placeholder: "Age" %></p>
+ <p><%= f.submit %></p>
+<% end %>

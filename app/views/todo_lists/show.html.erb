@@ -1,0 +1,22 @@
+
+<div id="box">
+  <p id="flashlight">
+    <span id="flash"><%= @todo_list.list_name%></span>
+  </p>
+</div>
+
+<h3>List Due Date: <%= @todo_list.list_due_date%></h3>
+
+<div class="options">
+<%= link_to 'Add Todo Item', new_todo_list_todo_item_path(@todo_list) %>
+</div>
+
+<div id="todo_list_wrapper">
+ <%= render @todo_list.todo_items %>
+</div>
+
+<div class="options">
+<%= link_to 'Edit', edit_todo_list_path(@todo_list) %> |
+<%= link_to 'Back', todo_lists_path %> |
+<%= link_to 'Delete', @todo_list, method: :delete, data: { confirm: 'Are you sure?' } %>
+</div>
