@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+##Author Varun Kashyap
 
-Things you may want to cover:
+##Description A Ruby on Rails todo list application following MVC design, which allows the user to CRUD todo lists, tasks, and their account. 
 
-* Ruby version
+##Project Status Completed
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+##Development Environment Eclipse (4.19), Java (openJDK 15.0.2), OS (Mac OS BigSur 11.4), Ruby (3.0.2p107)
